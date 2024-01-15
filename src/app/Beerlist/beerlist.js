@@ -1,14 +1,18 @@
 'use client'
- 
-import { useState } from 'react'
+import { useState } from "react"
+import BeerCard from "./beercard"
  
 export default function Beerlist() {
-  const [count, setCount] = useState(0)
+  const [beers, setBeers] = useState([])
+  const allBeers = beers.map(beer => {
+    <BeerCard 
+    key={beer.id}
+    beer={beer}/>
+  })
  
   return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-    </div>
+    <section>
+      {allBeers}
+    </section>
   )
 }
