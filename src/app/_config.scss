@@ -1,0 +1,35 @@
+$base-font-size: 1.6rem;
+$base-line-height: 1.4;
+$font-style: normal;
+$font-size: 1.6rem;
+
+$open-sans: var(--font-open-sans);
+$bitter: var(--font-bitter);
+$montserrat: var(--font-montserrat);
+$inter: var(--font-inter);
+$nunito: var(--font-nunito);
+
+$base-font-family: $nunito;
+$heading-font-family: $montserrat;
+
+// Utility color variables
+$heading-color: var(--color-accent);
+$base-font-color: var(--color-text-primary);
+$link: var(--color-secondary);
+$link-hover: var(--color-secondary);
+
+// Breakpoints 
+$x-small:    'screen and (min-width: 375px)';
+$small:      'screen and (min-width: 576px)';
+$small-ish:  'screen and (min-width: 680px)';
+$medium:     'screen and (min-width: 768px)';
+$tablet:     'screen and (min-width: 834px)';
+$medium-ish: 'screen and (min-width: 960px)';
+$large:      'screen and (min-width: 1024px)';
+$larger:     'screen and (min-width: 1080px)';
+$large-ish:  'screen and (min-width: 1150px)';
+$desktop:    'screen and (min-width: 1280px)';
+$xx-large:   'screen and (min-width: 1400px)';
+$xxx-large:  'screen and (min-width: 1650px)';
+$xxx-largest:'screen and (min-width: 1920px)';
+$mobile-nav: 'screen and (max-width: 1023px)';
