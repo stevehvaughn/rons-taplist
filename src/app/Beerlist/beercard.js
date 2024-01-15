@@ -8,9 +8,7 @@ export default function BeerCard({beer}) {
         <div>
             <Image 
             src={image} 
-            alt="Logo for beer" 
-            width={100} 
-            height={100}/>
+            alt="Logo for beer" />
             <div>
                 <h2>{name}</h2>
                 <h4>{style}</h4>

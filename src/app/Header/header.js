@@ -8,9 +8,7 @@ export default function Header() {
     <header>
         <Image 
             src={logo} 
-            alt="Brewery logo"
-            height={200}
-            width={200}/>
+            alt="Brewery logo"/>
         <h1>Ron's Taplist</h1>
     </header>
   )

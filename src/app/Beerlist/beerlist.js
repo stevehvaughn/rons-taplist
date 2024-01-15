@@ -1,11 +1,12 @@
 'use client'
 import { useState } from "react"
 import BeerCard from "./beercard"
+import mLogo from "../../../public/images/m-logo.jpeg"
  
 export default function Beerlist() {
   const [beers, setBeers] = useState([{
     id: 1,
-    image: "",
+    image: mLogo,
     name: "Pils",
     style: "Pilsner",
     brewery: "Matteson Brewing",
