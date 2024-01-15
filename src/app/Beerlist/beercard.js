@@ -2,7 +2,7 @@
 import Image from "next/image"
 
 export default function BeerCard({beer}) {
-    const {image, name, style, description, abv, ibu} = beer;
+    const {image, name, style, brewery, description, abv, ibu} = beer;
 
     return (
         <div>
@@ -14,10 +14,11 @@ export default function BeerCard({beer}) {
             <div>
                 <h2>{name}</h2>
                 <h4>{style}</h4>
+                <h4>{brewery}</h4>
                 <p>{description}</p>
-                <span>{abv}%</span>
-                <span>{ibu}</span>
             </div>
+            <span>{abv}%</span>
+            <span>{ibu}</span>
         </div>
     )
 }

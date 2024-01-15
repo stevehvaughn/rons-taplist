@@ -8,6 +8,7 @@ export default function Beerlist() {
     image: "",
     name: "Pils",
     style: "Pilsner",
+    brewery: "Matteson Brewing",
     description: "Delicious pilsner",
     abv: 4,
     ibu: 80
