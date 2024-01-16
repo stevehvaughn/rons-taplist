@@ -4,18 +4,7 @@ import BeerCard from "./beercard"
 // import mLogo from "../../../public/images/m-logo.jpeg"
  
 export default function Beerlist() {
-  const [beers, setBeers] = useState([
-  //   {
-  //   id: 1,
-  //   image: mLogo,
-  //   name: "Pils",
-  //   style: "Pilsner",
-  //   brewery: "Matteson Brewing",
-  //   description: "Delicious pilsner",
-  //   abv: 4,
-  //   ibu: 80
-  // }
-])
+  const [beers, setBeers] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -39,6 +28,8 @@ export default function Beerlist() {
     key={beer.id}
     beer={beer}/>
   ))
+
+  console.log(beers)
 
  
   return (

@@ -1,0 +1,1 @@
+export const beers = [{"id":1,"name":"Pilsner","style":"Pilsner"},{},{},{},{},{},{},{},{},{}];

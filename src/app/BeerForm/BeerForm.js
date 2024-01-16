@@ -1,9 +1,9 @@
 'use client'
-import { beerStyles } from '../utils/beerStyles';
+// import { beerStyles } from '../utils/beerStyles';
 import { useForm } from 'react-hook-form';
 
 const BeerForm = () => {
-  const { control, register, handleSubmit } = useForm();
+  const { register, handleSubmit } = useForm();
 
   const onSubmit = async (data) => {
     try {
@@ -27,15 +27,15 @@ const BeerForm = () => {
   };
 
   // List of US states
-  const usStates = [
-    'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware',
-    'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',
-    'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri',
-    'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York',
-    'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
-    'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
-    'West Virginia', 'Wisconsin', 'Wyoming',
-  ];
+  // const usStates = [
+  //   'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware',
+  //   'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',
+  //   'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri',
+  //   'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York',
+  //   'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
+  //   'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
+  //   'West Virginia', 'Wisconsin', 'Wyoming',
+  // ];
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -54,12 +54,12 @@ const BeerForm = () => {
       <div>
         <label>
           Beer Name:
-          <input type="text" {...register('beerName')} />
+          <input type="text" {...register('name')} />
         </label>
 
         <label>
           Beer Style:
-          <input type="text" {...register('beerStyle')} />
+          <input type="text" {...register('style')} />
         </label>
 
         <label>
@@ -73,7 +73,7 @@ const BeerForm = () => {
         </label>
       </div>
 
-      <div>
+      {/* <div>
         <label>
           City:
           <input type="text" {...register('city')} />
@@ -92,7 +92,7 @@ const BeerForm = () => {
             ))}
           </select>
         </label>
-      </div>
+      </div> */}
 
       <div>        
         <label>
